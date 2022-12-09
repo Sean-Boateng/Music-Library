@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "e4688665-f99a-4b48-8d99-a224b577ce66",
+		"name": "MusicLibrary_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24361957"
+	},
+	"item": [
+		{
+			"name": "Get_All_Songs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/music/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"music",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add_Song",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"title\": \"Mirros\",\n        \"artist\": \"Justin Timberlake\",\n        \"album\": \"Single\",\n        \"release_date\": \"2022-12-09\",\n        \"genre\": \"Pop\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/music/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"music",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_By_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/music/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"music",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/music/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"music",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_List",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"title\": \"Forever Young\",\n        \"artist\": \" JayZ\",\n        \"album\": \"GOD DID\",\n        \"release_date\": \"2022-12-09\",\n        \"genre\": \"Hip-Hop\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/music/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"music",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
